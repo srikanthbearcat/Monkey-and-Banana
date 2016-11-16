@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bandaru_MonkeysAndBananas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,103 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beautiful_Monkey_Clipart.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJw-nb-sMv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="90" y="132" width="220" height="290"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="4mc-SW-MXG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="300" y="28" width="80" height="82"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="alM-BL-JcK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="28" width="80" height="82"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="C7T-Qi-aeY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="498" width="80" height="82"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Mc-DPS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="294" y="498" width="80" height="82"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-bR-hly">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Check result"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="98" y="442" width="94" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-Tg-38g">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="New problem"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="254" y="442" width="98" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="newProblem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbK-Bb-ihc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-SM-pef">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="117" y="103" width="183" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KJw-nb-sMv"/>
+                                <exclude reference="4mc-SW-MXG"/>
+                                <exclude reference="alM-BL-JcK"/>
+                                <exclude reference="C7T-Qi-aeY"/>
+                                <exclude reference="qyy-Mc-DPS"/>
+                                <exclude reference="7Gc-bR-hly"/>
+                                <exclude reference="QGi-Tg-38g"/>
+                                <exclude reference="wbJ-SM-pef"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KJw-nb-sMv"/>
+                                <include reference="4mc-SW-MXG"/>
+                                <include reference="alM-BL-JcK"/>
+                                <include reference="C7T-Qi-aeY"/>
+                                <include reference="qyy-Mc-DPS"/>
+                                <include reference="7Gc-bR-hly"/>
+                                <include reference="QGi-Tg-38g"/>
+                                <include reference="wbJ-SM-pef"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="banana_1IV" destination="alM-BL-JcK" id="w6J-Mi-qyP"/>
+                        <outlet property="monkeyIV" destination="KJw-nb-sMv" id="2Yo-ej-3sD"/>
+                        <outlet property="questionLabel" destination="wbJ-SM-pef" id="M3u-JG-6jJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Beautiful_Monkey_Clipart.png" width="448" height="630"/>
+        <image name="banana20.png" width="409" height="440"/>
+    </resources>
 </document>

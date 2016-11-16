@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var monkeyIV: UIImageView!
+    @IBOutlet weak var banana_1IV: UIImageView!
+    @IBOutlet weak var questionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func newProblem(sender: AnyObject) {
+        questionLabel.text = "I Want 1 Banana"
+    }
 
 }
 

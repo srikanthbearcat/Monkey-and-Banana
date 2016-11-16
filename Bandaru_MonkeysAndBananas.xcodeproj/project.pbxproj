@@ -12,6 +12,8 @@
 		7E503FB51DDC21A4007E9904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E503FB31DDC21A4007E9904 /* Main.storyboard */; };
 		7E503FB71DDC21A4007E9904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E503FB61DDC21A4007E9904 /* Assets.xcassets */; };
 		7E503FBA1DDC21A4007E9904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E503FB81DDC21A4007E9904 /* LaunchScreen.storyboard */; };
+		7E503FC41DDC247A007E9904 /* Beautiful_Monkey_Clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E503FC31DDC247A007E9904 /* Beautiful_Monkey_Clipart.png */; };
+		7E503FC61DDC2502007E9904 /* banana20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E503FC51DDC2502007E9904 /* banana20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7E503FB61DDC21A4007E9904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E503FB91DDC21A4007E9904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E503FBB1DDC21A4007E9904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E503FC31DDC247A007E9904 /* Beautiful_Monkey_Clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beautiful_Monkey_Clipart.png; sourceTree = "<group>"; };
+		7E503FC51DDC2502007E9904 /* banana20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana20.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		7E503FAE1DDC21A4007E9904 /* Bandaru_MonkeysAndBananas */ = {
 			isa = PBXGroup;
 			children = (
+				7E503FC31DDC247A007E9904 /* Beautiful_Monkey_Clipart.png */,
+				7E503FC51DDC2502007E9904 /* banana20.png */,
 				7E503FAF1DDC21A4007E9904 /* AppDelegate.swift */,
 				7E503FB11DDC21A4007E9904 /* ViewController.swift */,
 				7E503FB31DDC21A4007E9904 /* Main.storyboard */,
@@ -122,8 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E503FC41DDC247A007E9904 /* Beautiful_Monkey_Clipart.png in Resources */,
 				7E503FBA1DDC21A4007E9904 /* LaunchScreen.storyboard in Resources */,
 				7E503FB71DDC21A4007E9904 /* Assets.xcassets in Resources */,
+				7E503FC61DDC2502007E9904 /* banana20.png in Resources */,
 				7E503FB51DDC21A4007E9904 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
