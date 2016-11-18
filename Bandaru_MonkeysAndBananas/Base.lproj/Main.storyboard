@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beautiful_Monkey_Clipart.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJw-nb-sMv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="90" y="132" width="220" height="290"/>
+                                    <rect key="frame" x="98" y="143" width="212" height="279"/>
                                 </variation>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="4mc-SW-MXG">
@@ -73,15 +73,6 @@
                                     <action selector="newProblem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbK-Bb-ihc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-SM-pef">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="117" y="103" width="183" height="21"/>
-                                </variation>
-                            </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana20.png" translatesAutoresizingMaskIntoConstraints="NO" id="alM-BL-JcK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <gestureRecognizers/>
@@ -92,6 +83,15 @@
                                     <outletCollection property="gestureRecognizers" destination="P1f-Xj-4Pk" appends="YES" id="5dA-Rp-cJt"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-SM-pef">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="113" width="354" height="22"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -103,8 +103,8 @@
                                 <exclude reference="qyy-Mc-DPS"/>
                                 <exclude reference="7Gc-bR-hly"/>
                                 <exclude reference="QGi-Tg-38g"/>
-                                <exclude reference="wbJ-SM-pef"/>
                                 <exclude reference="alM-BL-JcK"/>
+                                <exclude reference="wbJ-SM-pef"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -115,8 +115,8 @@
                                 <include reference="qyy-Mc-DPS"/>
                                 <include reference="7Gc-bR-hly"/>
                                 <include reference="QGi-Tg-38g"/>
-                                <include reference="wbJ-SM-pef"/>
                                 <include reference="alM-BL-JcK"/>
+                                <include reference="wbJ-SM-pef"/>
                             </mask>
                         </variation>
                     </view>
