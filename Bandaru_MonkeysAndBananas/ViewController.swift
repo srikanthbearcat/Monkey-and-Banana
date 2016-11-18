@@ -22,8 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-      
+        newProblem(self)
             }
 
     override func didReceiveMemoryWarning() {
@@ -32,21 +31,21 @@ class ViewController: UIViewController {
     }
 //Creates a new problem when button is clicked
     @IBAction func newProblem(sender: AnyObject) {
-        numberOfBananas = Int(arc4random_uniform(5))
+        numberOfBananas = Int(arc4random_uniform(4)+1)
         questionLabel.text = "I Want \(numberOfBananas) Bananas"
     }
     //Checks if required bananas are moved on the monkey image.
     @IBAction func checkResult(sender: AnyObject) {
-        if sqrt(pow(monkeyIV.center.x-banana1_IV.center.x, 2) + pow(monkeyIV.center.y-banana1_IV.center.y, 2)) <= 80 {
+        if sqrt(pow(monkeyIV.center.x-banana1_IV.center.x, 2) + pow(monkeyIV.center.y-banana1_IV.center.y, 2)) <= 110 {
             bananasmoved += 1
         }
-        if sqrt(pow(monkeyIV.center.x-banana2_IV.center.x, 2) + pow(monkeyIV.center.y-banana2_IV.center.y, 2)) <= 80  {
+        if sqrt(pow(monkeyIV.center.x-banana2_IV.center.x, 2) + pow(monkeyIV.center.y-banana2_IV.center.y, 2)) <= 110  {
             bananasmoved += 1
         }
-        if sqrt(pow(monkeyIV.center.x-banana3_IV.center.x, 2) + pow(monkeyIV.center.y-banana3_IV.center.y, 2)) <= 80 {
+        if sqrt(pow(monkeyIV.center.x-banana3_IV.center.x, 2) + pow(monkeyIV.center.y-banana3_IV.center.y, 2)) <= 110 {
             bananasmoved += 1
         }
-        if sqrt(pow(monkeyIV.center.x-banana4_IV.center.x, 2) + pow(monkeyIV.center.y-banana4_IV.center.y, 2)) <= 80  {
+        if sqrt(pow(monkeyIV.center.x-banana4_IV.center.x, 2) + pow(monkeyIV.center.y-banana4_IV.center.y, 2)) <= 110  {
              bananasmoved += 1
         }
         if numberOfBananas == bananasmoved{
@@ -58,7 +57,7 @@ class ViewController: UIViewController {
        
         bananasmoved = 0
     }
-    
+    //Called when panGesture  views move
     @IBAction func handlePan(panGR:UIPanGestureRecognizer) {
         let translation = panGR.translationInView(self.view)
         if let view = panGR.view {
